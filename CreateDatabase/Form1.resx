@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="insertToDatabaseTextBox.Text" xml:space="preserve">
+    <value>create database TworzonaBaza;
+
+CREATE TABLE TworzonaBaza.Jakastabela (
+  `Host` char(60) COLLATE utf8_bin NOT NULL DEFAULT '',
+  `Db` char(64) COLLATE utf8_bin NOT NULL DEFAULT '',
+  `User` char(80) COLLATE utf8_bin NOT NULL DEFAULT '',
+  `Table_name` char(64) COLLATE utf8_bin NOT NULL DEFAULT '',
+  `Column_name` char(64) COLLATE utf8_bin NOT NULL DEFAULT '',
+  `Timestamp` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `Column_priv` set('Select','Insert','Update','References') CHARACTER SET utf8 NOT NULL DEFAULT ''
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin COMMENT='Column privileges';
+
+INSERT INTO TworzonaBaza.Jakastabela (`Host`, `Db`, `User`, `Table_name`, `Column_name`, `Timestamp`, `Column_priv`) VALUES
+('localhost', 'mysql', 'pma', 'user', 'Host', '2012-06-18 09:26:21', 'Select'),
+('localhost', 'mysql', 'pma', 'user', 'User', '2012-06-18 09:26:21', 'Select'),
+('localhost', 'mysql', 'pma', 'user', 'Select_priv', '2012-06-18 09:26:21', 'Select'),
+('localhost', 'mysql', 'pma', 'user', 'Insert_priv', '2012-06-18 09:26:21', 'Select'),
+('localhost', 'mysql', 'pma', 'user', 'Update_priv', '2012-06-18 09:26:21', 'Select'),
+('localhost', 'mysql', 'pma', 'user', 'Delete_priv', '2012-06-18 09:26:21', 'Select'),
+('localhost', 'mysql', 'pma', 'user', 'Create_priv', '2012-06-18 09:26:21', 'Select'),
+('localhost', 'mysql', 'pma', 'user', 'Drop_priv', '2012-06-18 09:26:21', 'Select'),
+('localhost', 'mysql', 'pma', 'user', 'Reload_priv', '2012-06-18 09:26:21', 'Select'),
+('localhost', 'mysql', 'pma', 'user', 'Shutdown_priv', '2012-06-18 09:26:21', 'Select'),
+('localhost', 'mysql', 'pma', 'user', 'Process_priv', '2012-06-18 09:26:21', 'Select'),
+('localhost', 'mysql', 'pma', 'user', 'File_priv', '2012-06-18 09:26:21', 'Select'),
+('localhost', 'mysql', 'pma', 'user', 'Grant_priv', '2012-06-18 09:26:21', 'Select'),
+('localhost', 'mysql', 'pma', 'user', 'References_priv', '2012-06-18 09:26:21', 'Select'),
+('localhost', 'mysql', 'pma', 'user', 'Index_priv', '2012-06-18 09:26:21', 'Select'),
+('localhost', 'mysql', 'pma', 'user', 'Alter_priv', '2012-06-18 09:26:21', 'Select'),
+('localhost', 'mysql', 'pma', 'user', 'Show_db_priv', '2012-06-18 09:26:21', 'Select'),
+('localhost', 'mysql', 'pma', 'user', 'Super_priv', '2012-06-18 09:26:21', 'Select'),
+('localhost', 'mysql', 'pma', 'user', 'Create_tmp_table_priv', '2012-06-18 09:26:21', 'Select'),
+('localhost', 'mysql', 'pma', 'user', 'Lock_tables_priv', '2012-06-18 09:26:21', 'Select'),
+('localhost', 'mysql', 'pma', 'user', 'Execute_priv', '2012-06-18 09:26:21', 'Select'),
+('localhost', 'mysql', 'pma', 'user', 'Repl_slave_priv', '2012-06-18 09:26:21', 'Select'),
+('localhost', 'mysql', 'pma', 'user', 'Repl_client_priv', '2012-06-18 09:26:21', 'Select'),
+('localhost', 'mysql', 'pma', 'tables_priv', 'Host', '2012-06-18 09:27:17', 'Select'),
+('localhost', 'mysql', 'pma', 'tables_priv', 'Db', '2012-06-18 09:27:17', 'Select'),
+('localhost', 'mysql', 'pma', 'tables_priv', 'User', '2012-06-18 09:27:17', 'Select'),
+('localhost', 'mysql', 'pma', 'tables_priv', 'Table_name', '2012-06-18 09:27:17', 'Select'),
+('localhost', 'mysql', 'pma', 'tables_priv', 'Table_priv', '2012-06-18 09:27:17', 'Select'),
+('localhost', 'mysql', 'pma', 'tables_priv', 'Column_priv', '2012-06-18 09:27:17', 'Select');</value>
+  </data>
+</root>
